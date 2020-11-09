@@ -1,0 +1,43 @@
+.reliability-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 332px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 19px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.reliability-info--chemistry::before {
+  background-image: url("../img/chemistry.png");
+}
+
+.reliability-info--processing::before {
+  background-image: url("../img/processing.png");
+}
+
+.reliability-info--men::before {
+  background-image: url("../img/men.png");
+}
+
+.reliability-info__header {
+  margin-top: 0;
+  margin-bottom: 11px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212B31;
+}
+
+.reliability-info__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #72787D;
+}

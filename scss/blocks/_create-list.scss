@@ -1,0 +1,48 @@
+.create-list {
+  @include reset-list;
+  padding-bottom: 50px;
+}
+
+.create-list__item {
+  max-width: 589px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+.create-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+
+.create-item__intro {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.create-item__intro-header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.create-item__intro-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.75);
+}
