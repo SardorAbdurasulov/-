@@ -1,0 +1,75 @@
+.features-list {
+  @include reset-list;
+  max-width: 672px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-list__item {
+  width: 164px;
+  margin-right: 90px;
+}
+
+.features-list__item:nth-child(3n) {
+  margin-right: 0;
+}
+.features-list__item:nth-child(4n) {
+  margin-right: 0;
+  margin-top: 41px;
+}
+
+.features-list__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 112px;
+    margin-bottom: 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.features-list__link--machines::before {
+  background-image: url("../../img/machines.png");
+}
+.features-list__link--buildworld::before {
+  background-image: url("../../img/buildworld.png");
+}
+.features-list__link--contech::before {
+  background-image: url("../../img/contech.png");
+}
+.features-list__link--proptech::before {
+  background-image: url("../../img/proptech.png");
+}
+
+.features-list__text {
+  width: 139px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #72787D;
+}
+
+@include breakpoint-down (800) {
+  .features-list {
+    max-width: 100%;
+  }
+  .features-list__item {
+    width: 164px;
+    margin-right: 0;
+    margin-top: 40px;
+  }
+  .features-list__item:nth-child(4n) {
+    margin-top: 0;
+  }
+}
